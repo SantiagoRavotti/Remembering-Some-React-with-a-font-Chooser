@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)https://courses.edx.org/asset-v1:PennX+SD4x+2T2017+type@asset+block/chooser.html -->
+<html>
+  <head>
+
+  </head>
+
+  <body>
+   
+
+    <div id="container">
+      <div>
+        <div>
+          <input type="checkbox" id="boldCheckbox" hidden="" /><button
+            id="decreaseButton"
+            hidden="">-</button>
+            <span id="fontSizeSpan" hidden="">16</span>
+            <button id="increaseButton" hidden="">+</button>
+            <span id="textSpan" onclick="showForm()">Fun with React!</span>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/jsx">
+
+          ReactDOM.render(
+        <div>
+          <FontChooser min='4' max='40' size='16' text='Fun with React!' bold='false'/>
+         </div>,
+      document.getElementById('container'))
+      ;
+    </script>
+
+    <script src="FontChooser.js"></script>
+  </body>
+</html>
